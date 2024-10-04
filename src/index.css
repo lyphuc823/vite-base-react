@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn {
+    @apply font-bold py-2 px-4 rounded-full;
+  }
+  .btn-primary {
+    @apply bg-primary-700 text-dark-primary;
+  }
+}
